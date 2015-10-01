@@ -10,5 +10,6 @@ public class Reference {
     public static final String SERVER_PROXY_CLASS = "com.kittenqty.kitcraft.proxy.ServerProxy";
     public static final String GUI_FACTORY_CLASS = "com.kittenqty.kitcraft.client.gui.GuiFactory";
 
+    public static final String dependencies = "after:CoFHCore";
 }
 

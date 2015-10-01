@@ -1,8 +1,11 @@
 # Key localizations
 
 
+
 # Item localizations
 item.kitcraft:foodCheese.name=Cheese
+item.kitcraft:itemPot.name=Pot
+
 
 # Block localizations
 tile.kitcraft:blockCStone.name=Compressed Stone
@@ -13,6 +16,7 @@ tile.kitcraft:blockQuinStone.name=Quintuple Compressed Stone
 tile.kitcraft:blockSeStone.name=Sextuple Compressed Stone
 tile.kitcraft:blockSepStone.name=Septuple Compressed Stone
 tile.kitcraft:blockOStone.name=Octuple Compressed Stone
+
 
 # CreativeTab localizations
 itemGroup.kitcraft_items=EriCraft Items
