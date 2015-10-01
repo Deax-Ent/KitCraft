@@ -36,4 +36,10 @@ public class CreativeTabKC
         }
     };
 
+    public static final CreativeTabs KC_TAB_FOOD = new CreativeTabs(Reference.MOD_ID.toLowerCase() + "_food")
+    {
+        @Override
+        public Item getTabIconItem() { return Items.bread; }
+    };
+
 }
