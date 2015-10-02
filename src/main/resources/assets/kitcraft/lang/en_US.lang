@@ -17,6 +17,12 @@ tile.kitcraft:blockSeStone.name=Sextuple Compressed Stone
 tile.kitcraft:blockSepStone.name=Septuple Compressed Stone
 tile.kitcraft:blockOStone.name=Octuple Compressed Stone
 
+tile.blockGeneratorIdle.name=Kit Generator
+tile.blockGeneratorActive.name=Kit Generator
+
+# Container localization
+container.blockGenerator=Kit Generator
+
 
 # CreativeTab localizations
 itemGroup.kitcraft_items=EriCraft Items

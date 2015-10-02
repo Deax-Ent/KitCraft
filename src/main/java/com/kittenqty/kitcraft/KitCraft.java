@@ -1,6 +1,7 @@
 package com.kittenqty.kitcraft;
 
 import com.kittenqty.kitcraft.handler.ConfigurationHandler;
+import com.kittenqty.kitcraft.handler.GuiHandler;
 import com.kittenqty.kitcraft.init.ModBlocks;
 import com.kittenqty.kitcraft.init.ModItems;
 import com.kittenqty.kitcraft.init.Recipes;
@@ -15,8 +16,9 @@ import cpw.mods.fml.common.event.FMLFingerprintViolationEvent;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.network.NetworkRegistry;
 
-@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, certificateFingerprint = Reference.FINGERPRINT, version = Reference.MOD_VERSION, guiFactory = Reference.GUI_FACTORY_CLASS, dependencies = Reference.dependencies)
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, certificateFingerprint = Reference.FINGERPRINT, version = Reference.MOD_VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 public class KitCraft
 {
 
@@ -41,6 +43,7 @@ public class KitCraft
     {
         ConfigurationHandler.init(PreEvent.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
+        NetworkRegistry.INSTANCE.registerGuiHandler(KitCraft.instance, new GuiHandler());
 
         ModItems.init();
         ModBlocks.init();
@@ -49,6 +52,8 @@ public class KitCraft
     @Mod.EventHandler
     public static void load(FMLInitializationEvent event)
     {
+        ModBlocks.tileEntityRegister();
+
         Recipes.init();
     }
 

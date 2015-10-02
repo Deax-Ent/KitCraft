@@ -17,14 +17,14 @@ public class Recipes
         //GameRegistry.addShapelessRecipe(new ItemStack(Blocks.gold_block), new ItemStack(Items.stick), new ItemStack(Items.blaze_rod));
 
         // Blocks
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.BlockCStone), "sss", "sss", "sss", 's', new ItemStack(Blocks.stone));
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.BlockDStone), "sss", "sss", "sss", 's', new ItemStack(ModBlocks.BlockCStone));
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.BlockTStone), "sss", "sss", "sss", 's', new ItemStack(ModBlocks.BlockDStone));
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.BlockQuadStone), "sss", "sss", "sss", 's', new ItemStack(ModBlocks.BlockTStone));
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.BlockQuinStone), "sss", "sss", "sss", 's', new ItemStack(ModBlocks.BlockQuadStone));
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.BlockSeStone), "sss", "sss", "sss", 's', new ItemStack(ModBlocks.BlockQuinStone));
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.BlockSepStone), "sss", "sss", "sss", 's', new ItemStack(ModBlocks.BlockSeStone));
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.BlockOStone), "sss", "sss", "sss", 's', new ItemStack(ModBlocks.BlockSepStone));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.blockCStone), "sss", "sss", "sss", 's', new ItemStack(Blocks.stone));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.blockDStone), "sss", "sss", "sss", 's', new ItemStack(ModBlocks.blockCStone));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.blockTStone), "sss", "sss", "sss", 's', new ItemStack(ModBlocks.blockDStone));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.blockQuadStone), "sss", "sss", "sss", 's', new ItemStack(ModBlocks.blockTStone));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.blockQuinStone), "sss", "sss", "sss", 's', new ItemStack(ModBlocks.blockQuadStone));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.blockSeStone), "sss", "sss", "sss", 's', new ItemStack(ModBlocks.blockQuinStone));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.blockSepStone), "sss", "sss", "sss", 's', new ItemStack(ModBlocks.blockSeStone));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.blockOStone), "sss", "sss", "sss", 's', new ItemStack(ModBlocks.blockSepStone));
 
         // Items
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.itemPot), "   ", "s s", " t ", 's', "ingotIron", 't', new ItemStack(Blocks.heavy_weighted_pressure_plate)));
