@@ -1,6 +1,7 @@
 package com.kittenqty.kitcraft.reference;
 
-public class Reference {
+public class Reference
+{
 
     public static final String MOD_ID = "KitCraft";
     public static final String MOD_NAME = "KitCraft";
@@ -11,5 +12,5 @@ public class Reference {
     public static final String GUI_FACTORY_CLASS = "com.kittenqty.kitcraft.client.gui.GuiFactory";
 
     public static final String dependencies = "";
-}
 
+}

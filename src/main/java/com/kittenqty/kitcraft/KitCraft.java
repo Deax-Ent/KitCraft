@@ -2,9 +2,6 @@ package com.kittenqty.kitcraft;
 
 import com.kittenqty.kitcraft.handler.ConfigurationHandler;
 import com.kittenqty.kitcraft.handler.GuiHandler;
-import com.kittenqty.kitcraft.init.ModBlocks;
-import com.kittenqty.kitcraft.init.ModItems;
-import com.kittenqty.kitcraft.init.Recipes;
 import com.kittenqty.kitcraft.proxy.IProxy;
 import com.kittenqty.kitcraft.reference.Messages;
 import com.kittenqty.kitcraft.reference.Reference;
@@ -39,26 +36,21 @@ public class KitCraft
     }
 
     @Mod.EventHandler
-    public static void preLoad(FMLPreInitializationEvent PreEvent)
+    public static void preLoad(FMLPreInitializationEvent event)
     {
-        ConfigurationHandler.init(PreEvent.getSuggestedConfigurationFile());
+        ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
         NetworkRegistry.INSTANCE.registerGuiHandler(KitCraft.instance, new GuiHandler());
-
-        ModItems.init();
-        ModBlocks.init();
     }
 
     @Mod.EventHandler
     public static void load(FMLInitializationEvent event)
     {
-        ModBlocks.tileEntityRegister();
 
-        Recipes.init();
     }
 
     @Mod.EventHandler
-    public static void postLoad(FMLPostInitializationEvent PostEvent)
+    public static void postLoad(FMLPostInitializationEvent event)
     {
 
     }
